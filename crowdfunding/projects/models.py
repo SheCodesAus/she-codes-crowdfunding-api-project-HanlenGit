@@ -9,6 +9,7 @@ class Project(models.Model):
     image = models.URLField()
     is_open = models.BooleanField()
     date_created = models.DateTimeField()
+    end_date = models.DateTimeField()
     location = models.CharField(max_length=200)
     urgent = models.BooleanField()
     owner = models.ForeignKey(
