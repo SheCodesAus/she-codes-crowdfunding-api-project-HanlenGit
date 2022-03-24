@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db import models
+from django.forms import CharField
 
 # Create your models here.
 class Project(models.Model):
@@ -33,3 +34,7 @@ class Pledge(models.Model):
         on_delete=models.CASCADE,
         related_name='supporter_pledges'
     )
+
+class Service(models.Model):
+    name = models.CharField(max_length=64, unique=True)
+    
