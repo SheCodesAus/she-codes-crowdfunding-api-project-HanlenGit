@@ -13,7 +13,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='project',
             name='end_date',
-            field=models.DateTimeField(default='1 April 2022'),
+            field=models.DateTimeField(default='2022-04-01 12:00'),
             preserve_default=False,
         ),
     ]
